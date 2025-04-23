@@ -7,7 +7,6 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: yellow;
 }
 
 * {
@@ -22,11 +21,13 @@ body {
 .result {
   background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-radius: 0 0 15px 15px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .result > div {
   width: 50%;
-  font-size: 10vw;
   aspect-ratio: 1;
   border-radius: 50%;
   justify-content: center;
@@ -34,10 +35,142 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
-  background-color: red;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 
 .result > div span:first-child {
-  font-size: calc(1em + 15%);
-  background-color: aquamarine;
+  font-size: clamp(2.8rem, 20vw, 20.25rem);
+  color: white;
+}
+
+.result > div span:last-child {
+  color: rgba(255, 255, 255, 0.536);
+  font-weight: bold;
+  font-size: clamp(0.8rem, 3vw, 10.25rem);
+}
+
+.result h2 {
+  color: rgba(255, 255, 255, 0.675);
+  font-size: clamp(1rem, 4vw, 10.25rem);
+}
+
+.result h3 {
+  color: rgb(255, 255, 255);
+  font-size: clamp(1rem, 6vw, 10.25rem);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.result p {
+  color: rgba(255, 255, 255, 0.536);
+  font-weight: bold;
+  font-size: clamp(0.8rem, 3vw, 10.25rem);
+  padding: 0 40px 0;
+  margin-bottom: 30px;
+}
+
+/* Rules CSS Summary */
+.summary {
+  background-color: white;
+  margin-top: -20px;
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.summary > h2 {
+  margin-top: 40px;
+  font-size: clamp(1em, 4.5vw, 10em);
+}
+
+.summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul > li {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: clamp(1em, 4vw, 10em);
+  border-radius: 10px;
+  padding: 15px;
+  padding-left: clamp(2.5em, 12%, 20em);
+}
+
+ul > li p:last-child span:last-child {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+ul li > * {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+/* Reaction css */
+ul .reaction {
+  background: url(../assets/images/icon-reaction.svg);
+  background-repeat: no-repeat;
+  background-position: center left 10px;
+  background-size: clamp(1em, 8%, 10em);
+  background-color: hsla(0, 100%, 67%, 0.085);
+}
+
+ul .reaction p:first-child {
+  color: hsl(0, 100%, 67%);
+}
+
+/* Memory css */
+ul .memory {
+  background: url(../assets/images/icon-memory.svg);
+  background-repeat: no-repeat;
+  background-position: center left 10px;
+  background-size: clamp(1em, 8%, 10em);
+  background-color: hsla(39, 100%, 56%, 0.085);
+}
+
+ul .memory p:first-child {
+  color: hsl(39, 100%, 56%);
+}
+
+/* verbal css */
+ul .verbal {
+  background: url(../assets/images/icon-verbal.svg);
+  background-repeat: no-repeat;
+  background-position: center left 10px;
+  background-size: clamp(1em, 8%, 10em);
+  background-color: hsla(166, 100%, 37%, 0.085);
+}
+
+ul .verbal p:first-child {
+  color: hsl(166, 100%, 37%);
+}
+
+/* Visual css */
+ul .visual {
+  background: url(../assets/images/icon-visual.svg);
+  background-repeat: no-repeat;
+  background-position: center left 10px;
+  background-size: clamp(1em, 8%, 10em);
+  background-color: hsla(234, 85%, 45%, 0.085);
+}
+
+ul .visual p:first-child {
+  color: hsl(234, 85%, 45%);
+}
+
+/* button de peticion de continuar */
+button {
+  border: none;
+  width: 100%;
+  font-size: clamp(1em, 4vw, 10em);
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 20px;
+  padding: 15px 0;
+  margin: 5px 0 20px;
 }
