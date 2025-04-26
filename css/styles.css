@@ -175,6 +175,11 @@ button {
   margin: 5px 0 20px;
 }
 
+button:active {
+  background: hsl(224, 30%, 27%);
+  color: rgb(154, 88, 241);
+}
+
 @media screen and (min-width: 600px), screen and (orientation: landscape) {
   body {
     display: flex;
@@ -244,6 +249,13 @@ button {
 
   ul > li {
     font-size: clamp(0.9em, 1vw, 5.25rem);
+  }
+}
+
+@media screen and (min-width: 600px), (hover: hover) {
+  button:focus {
+    outline: 2px solid hsl(0, 100%, 67%);
+    filter: drop-shadow(2px 2px 9px hsl(0, 100%, 67%));
   }
 
   button:hover {
