@@ -1,5 +1,6 @@
 html {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 16px;
 }
@@ -175,15 +176,12 @@ button {
   margin: 5px 0 20px;
 }
 
-<<<<<<< HEAD
-=======
 button:active {
-  background: hsl(224, 30%, 27%);
-  color: rgb(154, 88, 241);
+  background: hsl(224, 95%, 25%);
+  color: rgb(136, 98, 187);
 }
 
->>>>>>> 03f233475b8ad5c907d018ec84c771a749f7c1e0
-@media screen and (min-width: 600px), screen and (orientation: landscape) {
+@media screen and (min-width: 600px), (orientation: landscape) {
   body {
     display: flex;
     justify-content: center; /* horizontal */
@@ -253,8 +251,6 @@ button:active {
   ul > li {
     font-size: clamp(0.9em, 1vw, 5.25rem);
   }
-<<<<<<< HEAD
-=======
 }
 
 @media screen and (min-width: 600px), (hover: hover) {
@@ -262,7 +258,6 @@ button:active {
     outline: 2px solid hsl(0, 100%, 67%);
     filter: drop-shadow(2px 2px 9px hsl(0, 100%, 67%));
   }
->>>>>>> 03f233475b8ad5c907d018ec84c771a749f7c1e0
 
   button:hover {
     background: linear-gradient(
